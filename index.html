@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CodeCrafts by Mustee – Launching Soon</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeCrafts by Mustee – Coming Soon</title>
   <style>
     :root {
       --bg-color: #0d1b2a;
@@ -46,6 +47,7 @@
       padding: 1rem 2rem;
       border-radius: 12px;
       letter-spacing: 2px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     @media (max-width: 768px) {
@@ -54,12 +56,12 @@
       }
 
       html::before {
-        content: 'Coming Soon – Visit on Desktop';
+        content: 'Visit on Desktop – Launching Soon';
         display: block;
         text-align: center;
         margin-top: 50vh;
-        color: #fff;
-        background: #000;
+        color: white;
+        background: black;
         padding: 1rem;
         font-size: 1.2rem;
       }
@@ -68,21 +70,26 @@
 </head>
 <body>
   <h1>CodeCrafts by Mustee</h1>
-  <p>Something great is coming...</p>
+  <p>We’re working on something awesome. Launching soon…</p>
   <div class="countdown" id="countdown">Loading...</div>
 
   <script>
     const countdown = document.getElementById("countdown");
 
-    // Set 7 days from now
-    const target = new Date();
-    target.setDate(target.getDate() + 7);
+    // Get today's date and set countdown to 7 days from today at 12:00 PM
+    const now = new Date();
+    const launchDate = new Date(
+      now.getFullYear(),
+      now.getMonth(),
+      now.getDate() + 7,
+      12, 0, 0 // 12:00 PM sharp
+    );
 
     function updateCountdown() {
-      const now = new Date().getTime();
-      const distance = target - now;
+      const currentTime = new Date().getTime();
+      const distance = launchDate.getTime() - currentTime;
 
-      if (distance < 0) {
+      if (distance <= 0) {
         countdown.innerHTML = "We're live!";
         return;
       }
