@@ -1,109 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CodeCrafts by Mustee – Coming Soon</title>
-  <style>
-    :root {
-      --bg-color: #0d1b2a;
-      --text-color: #e0e1dd;
-      --accent-color: #1b263b;
-      --highlight: #778da9;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-      background: var(--bg-color);
-      color: var(--text-color);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      color: var(--highlight);
-    }
-
-    .countdown {
-      font-size: 2rem;
-      background: var(--accent-color);
-      padding: 1rem 2rem;
-      border-radius: 12px;
-      letter-spacing: 2px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    @media (max-width: 768px) {
-      body {
-        display: none;
-      }
-
-      html::before {
-        content: 'Visit on Desktop – Launching Soon';
-        display: block;
-        text-align: center;
-        margin-top: 50vh;
-        color: white;
-        background: black;
-        padding: 1rem;
-        font-size: 1.2rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mustee | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>CodeCrafts by Mustee</h1>
-  <p>We’re working on something awesome. Launching soon…</p>
-  <div class="countdown" id="countdown">Loading...</div>
+    <header class="site-header">
+        <nav class="container navbar">
+            <h1 class="site-title">Mustee</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <script>
-    const countdown = document.getElementById("countdown");
+    <main class="main-content">
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <h2>Hi, I’m Mustee</h2>
+                <p>A Front-End Developer passionate about clean and functional websites.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn--primary">Hire Me</a>
+                    <a href="#projects" class="btn btn--ghost">View Projects</a>
+                </div>
+            </div>
+        </section>
 
-    // Get today's date and set countdown to 7 days from today at 12:00 PM
-    const now = new Date();
-    const launchDate = new Date(
-      now.getFullYear(),
-      now.getMonth(),
-      now.getDate() + 7,
-      12, 0, 0 // 12:00 PM sharp
-    );
+        <section id="about" class="section about">
+            <div class="container about__container">
+                <h2>About Me</h2>
+                <p>I'm a Computer Engineering student at OAU, Nigeria, with over 4 years of experience in HTML and CSS, and currently expanding my skills in JavaScript. I specialize in building clean, responsive, and functional websites tailored for clients, small businesses, and personal brands.</p>
+            
+                <p>I build landing pages, portfolio websites, and simple business sites. I'm available for quick delivery, fair pricing, and long-term collaboration.</p>
+              </div>
+        </section>
 
-    function updateCountdown() {
-      const currentTime = new Date().getTime();
-      const distance = launchDate.getTime() - currentTime;
+        <section id="skills" class="section skills">
+            <div class="container skills__container">
+                <h2>Skills</h2>
+                <ul class="skills-grid">
+                    <li><img src="images/html.svg" class="skill-icon" alt="HTML5 logo" /></li>
+                    <li><img src="images/css.svg" class="skill-icon" alt="CSS3 logo" /></li>
+                    <li><img src="images/javascript.svg" class="skill-icon" alt="JavaScript logo" /></li>
+                    <li><img src="images/github.svg" class="skill-icon" alt="GitHub logo" /></li>
+                    <li><img src="images/responsive.webp" class="skill-icon" alt="Responsive design icon" /></li>
+                </ul>
+            </div>
+        </section>
 
-      if (distance <= 0) {
-        countdown.innerHTML = "We're live!";
-        return;
-      }
+        <section id="projects" class="section projects">
+            <div class="container projects__container">
+                <h2>Projects</h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <h3>Landing Page</h3>
+                        <img src="images/landing.jpg" alt="Project screenshot">
+                        <p>A modern responsive landing page template.</p>
+                        <a href="#" class="btn btn--primary">Live Demo</a>
+                        <a href="#" class="btn btn--ghost">GitHub</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Portfolio Website</h3>
+                        <img src="images/portfolio.jpg" alt="Project screenshot">
+                        <p>Personal portfolio site to showcase projects and skills.</p>
+                        <a href="#" class="btn btn--primary">Live Demo</a>
+                        <a href="#" class="btn btn--ghost">GitHub</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Business Website</h3>
+                        <img src="images/business.jpg" alt="Project screenshot">
+                        <p>Clean and professional layout for small businesses.</p>
+                        <a href="#" class="btn btn--primary">Live Demo</a>
+                        <a href="#" class="btn btn--ghost">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        <section class="section services">
+          <div class="container">
+            <h2>What I Can Do</h2>
+            <ul>
+              <li>✔️ Responsive landing pages</li>
+              <li>✔️ Personal or business portfolio websites</li>
+              <li>✔️ Redesign or fix existing websites</li>
+              <li>✔️ Fast delivery & client satisfaction</li>
+            </ul>
+          </div>
+        </section>
 
-      countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-    }
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>I build clean, responsive, and user-focused websites using HTML, CSS, and JavaScript. I'm passionate about helping individuals and small businesses bring their ideas online. Let’s work together to create something that stands out.</p>
+                
+                <form class="contact-form" action="https://formspree.io/f/xnnvbwpg" method="POST" enctype="application/x-www-form-urlencoded">
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required/> 
+                  </div>
 
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-  </script>
+                  <div class="form-group">
+                    <label for="project">Project</label>
+                    <input type="text" id="project" name="project" placeholder="Project title or description" required/> 
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required/> 
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                  </div>
+
+                  <!-- Hidden input sets where responses are sent -->
+                  <input type="hidden" name="_subject" value="New project inquiry from portfolio" />
+
+                  <button type="submit" class="btn btn--submit">Send Message</button>
+
+                </form>
+                
+                <div class="contact-info">
+                  <p><strong>Email:</strong> <a href="mailto:mustee.codes@gmail.com">mustee.codes@gmail.com</a></p>
+                  <p><strong>GitHub:</strong> <a href="https://github.com/codecraftbymustee/codecraftbymustee.github.io" target="_blank" rel="noopener noreferrer">codecraftbymustee.github.io</a></p>
+                  <!--<p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourusername</a></p>-->
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Mustee. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
