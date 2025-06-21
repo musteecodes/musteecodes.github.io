@@ -1,1 +1,366 @@
+/* ========== CSS Variables ========== */
+:root {
+    --color-primary: #002c49;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+    --color-bg: #002c49;
+    --color-text: #212529;
 
+    --font-family-base: 'Segoe UI', sans-serif;
+    --font-family-heading: 'Montserrat', sans-serif;
+
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 2rem;
+
+    --line-height-base: 1.5;
+    --font-weight-bold: 700;
+
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-xxl: 3rem;
+
+    --border-radius-md: 8px;
+    --transition: all 0.3s ease;
+}
+
+/* ========== Base Reset ========== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-base);
+    background-color: var(--color-light);
+    color: var(--color-text);
+    line-height: var(--line-height-base);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+/* ========== Typography ========== */
+h1, h2 {
+    font-family: var(--font-family-heading);
+}
+
+h1 {
+    font-size: var(--font-size-xxl);
+    color: var(--color-light);
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+    margin: 0 0 1rem;
+}
+
+p {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-md);
+}
+
+/* ========== Layout ========== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: var(--space-xxl) 0;
+}
+
+/* ========== Header ========== */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--color-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--space-xl);
+}
+
+.nav-links a {
+    color: var(--color-light);
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--color-dark);
+}
+
+/* ========== Hero Section ========== */
+#home.hero {
+    background-color: var(--color-bg);
+    color: var(--color-light);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    text-align: center;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--border-radius-md);
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: var(--space-md);
+}
+
+.btn {
+    display: inline-block;
+    font-weight: bold;
+    border-radius: var(--border-radius-md);
+    padding: var(--space-xs) var(--space-md);
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.btn--primary {
+    background-color: white;
+    color: var(--color-primary);
+    border: 2px solid var(--color-light); /* maintains strength & cohesion */
+}
+
+.btn--primary:hover {
+    background-color: var(--color-dark);
+    border-color: var(--color-dark); /* slightly darker on hover */
+}
+
+.btn--ghost {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+
+}
+
+.btn--ghost:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* ========== About Section ========== */
+.about__container {
+    padding-bottom: 1rem;
+}
+
+/* ========== Skills Section ========== */
+.skills__container {
+    padding-bottom: 3rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-md);
+}
+
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+/* ========== Projects Section ========== */
+.projects__container h2 {
+    margin-bottom: var(--space-md);
+}
+
+.project-cards {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--border-radius-md);
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-bottom: var(--space-sm);
+}
+
+.project-card img {
+    border-radius: var(--space-xs);
+    margin-bottom: var(--space-sm);
+}
+
+.project-card p {
+    margin: var(--space-sm) 0;
+    font-size: 0.9rem;
+}
+
+.project-card .btn {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--border-radius-md);
+}
+
+/* ========== Contact Section ============ */
+.btn--contact{
+  border: 2px solid var(--color-primary);
+  transition: var(--transition);
+}
+.btn--contact:hover{
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* ========== Section Backgrounds ========== */
+#about {
+    background-color: #f1f3f5;
+}
+
+#skills {
+    background-color: #ffffff;
+}
+
+#projects {
+    background-color: #e9f2f9;
+}
+
+#contact {
+    background-color: #f8f9fa;
+}
+
+/* ========== Contact Section = Response to new form ========== */
+.contact-form {
+    margin-top: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: var(--space-xs);
+    font-weight: bold;
+    font-size: var(--font-size-base);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: var(--space-sm);
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-size-base);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 1px solid black;
+    border-color: var(--color-primary);
+}
+
+.btn--submit {
+    margin-top: var(--space-md);
+    padding: 1rem 0;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+}
+
+.contact-info {
+    margin-top: var(--space-xl);
+    font-size: 0.95rem;
+}
+
+.contact-info a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.contact-info a:hover {
+    color: var(--color-dark);
+}
+
+/* ========== Footer ========== */
+.site-footer {
+    background-color: var(--color-bg);
+    color: var(--color-light);
+    text-align: center;
+    padding: var(--space-lg) 0;
+    font-size: var(--font-size-base);
+    margin-top: var(--space-xl);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .project-card {
+        padding: var(--space-sm);
+    }
+
+    .skills-grid,
+    .project-cards {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
