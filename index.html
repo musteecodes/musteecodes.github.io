@@ -63,7 +63,12 @@
     .links {
       margin-top: 1.5rem;
     }
-
+    .time-zone{
+      color: var(--highlight);
+      text-decoration: underline;
+      margin: 0 0.5rem;
+      font-weight: bold;
+    }
     .links a {
       color: var(--highlight);
       text-decoration: underline;
@@ -97,7 +102,9 @@
     <a href="mailto:mustee.codes@gmail.com">Email Me</a>
     <a href="https://github.com/codecraftbymustee" target="_blank" rel="noopener noreferrer">GitHub</a>
   </div>
-
+  
+  <div class="time-zone">UTC+1</div>
+  
   <script>
   const countdown = document.getElementById("countdown");
 
@@ -118,7 +125,7 @@
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s (UTC+1)`;
+    countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   }
 
   updateCountdown();
