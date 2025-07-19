@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mustapha is a front-end developer who builds responsive, accessible websites using HTML, CSS, and JavaScript. View his work and get in touch for your next project." />
+    <meta name="author" content="Mustapha Qamardeen" />
+    <meta name="keywords" content="Frontend Developer, HTML, CSS, JavaScript, Portfolio, Web Developer Nigeria, Mustee, Mustapha" />
+    <meta name="robots" content="index, follow" />
+
+    <title>Mustee | Frontend Developer</title>
+
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="container navbar" role="navigation" aria-label="Main Navigation">
+            <a href="#home" class="site-name">Mustee</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="current-page">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="nav-icon">&#9776;</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <h2 id="hero-h2">Hi, I’m Mustapha – Front-End Developer</h2>
+                <p>I build fast, modern, accessible websites using HTML, CSS, and JavaScript.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn--primary">Hire Me</a>
+                    <a href="#projects" class="btn btn--secondary">View Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container about-container">
+                <div class="about-left">
+                    <img src="images/profile.webp" alt="">
+                </div>
+                <div class="about-right">
+                    <h2 class="section-title">About Me</h2>
+
+                    <p>
+                        I'm <strong>Mustapha</strong>, a Computer Engineering student with <strong>4 years of front-end experience</strong>. I create clean, responsive, and accessible websites using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+                    </p>
+                    <p>
+                        I build <strong>landing pages</strong>, <strong>portfolios</strong>, and <strong>business websites</strong>—optimized for speed, usability, and modern design standards.
+                    </p>
+                    <p>
+                        I’m open to <strong>freelance work</strong>, quick turnarounds, and long-term collaborations. If you're looking for someone who codes with clarity and designs with purpose, let’s connect.
+                    </p>
+                    <p class="skills">
+                        <strong>Skills:</strong> HTML5, CSS3, JavaScript, Git, UI Design
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-tab-buttons" role="tablist">
+                    <button class="project-tab active-tab" role="tab" aria-selected="true" aria-controls="panel-latest" id="tab-latest">Latest</button>
+                    <button class="project-tab " role="tab" aria-selected="false" aria-controls="panel-landing" id="tab-lading">Landing Page</button>
+                    <button class="project-tab " role="tab" aria-selected="false" aria-controls="panel-portfolio" id="tab-portfolio">Portfolio</button>
+                    <button class="project-tab " role="tab" aria-selected="false" aria-controls="panel-multi" id="tab-multi">Multi-Page</button>
+                    <button class="project-tab " role="tab" aria-selected="false" aria-controls="panel-business" id="tab-business">Business</button>
+                </div>
+
+                <div class="project-tab-panels">
+                    <div class="project-panel active-panel" role="tabpanel" id="panel-latest" aria-labelledby="tab-latest">
+                        <article class="project">
+                            <div class="project-image"><img src="images/project1.webp" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category" title="Design Category">Portfolio</p>
+                            <p class="project-name" title="Design Name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        
+                    </div>
+
+                    <div class="project-panel" role="tabpanel" id="panel-landing" aria-labelledby="tab-lading">
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category" title="Design Category">Portfolio</p>
+                            <p class="project-name" title="Design Name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                    </div>
+
+                    <div class="project-panel" role="tabpanel" id="panel-portfolio" aria-labelledby="tab-portfolio">
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category" title="Design Category">Portfolio</p>
+                            <p class="project-name" title="Design Name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                    </div>
+
+                    <div class="project-panel" role="tabpanel" id="panel-multi" aria-labelledby="tab-multi">
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category" title="Design Category">Portfolio</p>
+                            <p class="project-name" title="Design Name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                    </div>
+
+                    <div class="project-panel" role="tabpanel" id="panel-business" aria-labelledby="tab-business">
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category" title="Design Category">Portfolio</p>
+                            <p class="project-name" title="Design Name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                        <article class="project">
+                            <div class="project-image"><img src="images/portfolio1.png" alt="Screenshot of Mustee Portfolio Website"></div>
+                            <p class="project-category">Portfolio</p>
+                            <p class="project-name">Mustee Portfolio Website</p>
+                            <p class="project-description">A personal portfolio site built with modern HTML, CSS, and JavaScript to showcase projects, skills, and services.</p>
+                            <a href="https://example.com/live-preview" class="btn-live-preview" target="_blank">Live Preview</a>
+                        </article>
+                    </div>
+
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services">
+            <div class="container">
+                <h2>Services</h2>
+                <p class="service-intro">
+                    I specialize in <strong>frontend web development</strong>, offering clean, responsive websites built with HTML, CSS, and JavaScript. I can implement interactive features using vanilla JS and solve common UI logic problems with ease. All services are frontend-only — I currently do not offer backend or server-side development.
+                </p>
+
+                <div class="services-container">
+                    <article class="service">
+                        <div class="service-icon"><i class="fa-solid fa-display"></i></div>
+                        <div class="service-content">
+                            <h3>Landing Page Design</h3>
+                            <p>Responsive, fast-loading landing pages tailored for product launches, services, or campaigns — optimized for conversions.</p>
+                            <a class="learn-more" href="#projects">
+                                <span>Learn More</span>
+                                <span class="learn-more-icon">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <div class="service-icon"><i class="fa-solid fa-id-card"></i></div>
+                        <div class="service-content">
+                            <h3>Portfolio Website</h3>
+                            <p>Custom personal portfolio designs that highlight your skills, experiences, and projects with a clean and modern layout.</p>
+                            <a class="learn-more" href="#projects">
+                                <span>Learn More</span>
+                                <span class="learn-more-icon">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+                        <div class="service-content">
+                            <h3>Business Website</h3>
+                            <p>Professional websites for small businesses, including service pages, contact forms, and responsive design principles.</p>
+                            <a class="learn-more" href="#projects">
+                                <span>Learn More</span>
+                                <span class="learn-more-icon">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="service-content">
+                            <h3>Multi-Page Website</h3>
+                            <p>Multi-page static websites built with clean navigation and page structure — ideal for organizations and content-rich platforms.</p>
+                            <a class="learn-more" href="#projects">
+                                <span>Learn More</span>
+                                <span class="learn-more-icon">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <div class="service-content">
+                            <h3>UI/UX Redesign</h3>
+                            <p>Revamp existing websites with modern layouts, improved accessibility, and user-focused design to enhance experience.</p>
+                            <a class="learn-more" href="#projects">
+                                <span>Learn More</span>
+                                <span class="learn-more-icon">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div class="service-content">
+                            <h3>Responsive Conversion</h3>
+                            <p>Convert outdated or desktop-only pages into fully responsive designs that work across all screen sizes and devices.</p>
+                            <a class="learn-more" href="#projects">
+                                <span>Learn More</span>
+                                <span class="learn-more-icon">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>I build clean, responsive, and user-focused websites using HTML, CSS, and JavaScript. I'm passionate about helping individuals and small businesses bring their ideas online. Let’s work together to create something that stands out.</p>
+                
+                <form class="contact-form" action="https://formspree.io/f/xnnvbwpg" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required/> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project">Project</label>
+                        <input type="text" id="project" name="project" placeholder="Project title or description" required/> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required/> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+
+                    <input type="hidden" name="_subject" value="New project inquiry from portfolio" />
+
+                    <button type="submit" class="btn btn--submit">Send Message</button>
+                </form>
+                
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:mustee.codes@gmail.com">mustee.codes@gmail.com</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/codecraftbymustee/codecraftbymustee.github.io" target="_blank" rel="noopener noreferrer">codecraftbymustee.github.io</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Mustee. All rights reserved.</p>
+            <p>Designed and Developed with <i class="fa-solid fa-heart" style="color: #f95d5d;"></i> by Mustee</p>
+            <p>V 1.1.30</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/4b95276c46.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
