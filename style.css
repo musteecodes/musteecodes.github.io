@@ -336,7 +336,7 @@ p {
 .project-tab-buttons{
     padding: var(--space-sm);
     border-radius: 20px;
-    contain: content;
+
     max-width: 600px;
     margin: 3rem auto 1.5rem;
     display: flex;
@@ -390,6 +390,10 @@ p {
 .project-image{
     border-radius: var(--space-xs) var(--space-xs) 0 0;
     overflow: hidden;
+    width: 100%;
+}
+.project-image img{
+    width: 100%;
     height: 200px;
 }
 .project-category{
@@ -409,7 +413,6 @@ p {
     margin-bottom: var(--space-l5);
 }
 .project-btns{
-    display: none;
     position: absolute;
     bottom: var(--space-sm);
 }
@@ -425,11 +428,14 @@ p {
     color: var(--color-light);
     margin-right: var(--space-xs);
 }
-.btn-case-study{
+.projects-btns .btn-case-study{
     font-weight: 800;
+    display: none;
 }
 
-
+.hidden{
+    background-color: green;
+}
 /* CASE STUDY MODAL */
 .modal{
     position: fixed;
@@ -698,6 +704,13 @@ p {
         margin-top: var(--space-md);
         color: rgb(228, 245, 242)
     }
+    .container--portfolio h2{
+        padding-left: var(--space-xl);
+        
+    }
+    .container--portfolio h2::after{
+        left: var(--space-xl);
+    }
     .hero p {
         font-size: 0.9rem;
         margin: 1rem 0 3rem;
@@ -734,7 +747,13 @@ p {
 @media (max-width: 425px) {
     .about-container{
         flex-direction: column;
-    }    
+    }
+    .project-tab-buttons{
+        overflow: auto;
+    }
+    .project-tab{
+        text-wrap: nowrap;
+    }   
     .about-left{
         width: 100%;
         margin-bottom: var(--space-lg);
@@ -747,16 +766,19 @@ p {
     .container{
         width: 90%;
     }
+    .container.container--portfolio{
+        width: 100%;
+    }
     .site-header{
         height: 5rem;
     }
     .cta-buttons{
         display: flex;
     }
+
     .project-tab-panels{
-        border-radius: 0 0 15px 15px;
-        padding: var(--space-sm);
-        
+        border-radius: 0 0 0 15px;
+        padding: var(--space-sm);  
     }
     .services-container{
         display: grid;
@@ -766,7 +788,7 @@ p {
     .project-tab-buttons{
         width: 100%;
         margin-bottom: 0;
-        border-radius: 10px 10px 0 0;
+        border-radius: 0;
         column-gap: 7px;
         overflow: auto;
         contain: content;
