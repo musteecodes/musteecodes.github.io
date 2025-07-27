@@ -409,6 +409,7 @@ p {
     margin-bottom: var(--space-l5);
 }
 .project-btns{
+    display: none;
     position: absolute;
     bottom: var(--space-sm);
 }
