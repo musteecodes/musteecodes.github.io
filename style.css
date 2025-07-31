@@ -342,6 +342,7 @@ p {
     display: flex;
     column-gap: var(--space-sm);
     background-color: #e3e8ee;
+    overflow: auto;
 }
 .project-tab{
     border: none;
