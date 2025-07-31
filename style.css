@@ -734,7 +734,9 @@ p {
         flex-direction: column;
         gap: 5px;
     }
-    
+    .project-tab{
+        text-wrap: nowrap;
+    }
     .project-card {
         padding: var(--space-sm);
     }
@@ -744,11 +746,7 @@ p {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
-@media (max-width: 633px) {
-    .project-tab{
-        text-wrap: nowrap;
-    } 
-}
+
 @media (max-width: 425px) {
     .about-container{
         flex-direction: column;
