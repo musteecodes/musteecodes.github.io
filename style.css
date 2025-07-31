@@ -744,6 +744,11 @@ p {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
+@media (max-width: 633px) {
+    .project-tab{
+        text-wrap: nowrap;
+    } 
+}
 @media (max-width: 425px) {
     .about-container{
         flex-direction: column;
@@ -751,9 +756,7 @@ p {
     .project-tab-buttons{
         overflow: auto;
     }
-    .project-tab{
-        text-wrap: nowrap;
-    }   
+      
     .about-left{
         width: 100%;
         margin-bottom: var(--space-lg);
