@@ -437,73 +437,6 @@ p {
 .hidden{
     background-color: green;
 }
-/* CASE STUDY MODAL */
-.modal{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1100;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5ms ease;
-}
-
-.modal.show{
-    opacity: 1;
-    pointer-events: auto;
-}
-.modal-content{
-    position: relative;
-    width: 99%;
-    max-width: 600px;
-    height: 95%;
-    max-height: 1000px;
-    background-color: var(--color-light);
-    border-radius: var(--border-radius-lg);
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    transform: scale(0.7);
-    transition: transform 0.9s ease;
-}
-.modal.show .modal-content{
-    transform: scale(1);
-}
-
-.modal-content iframe{
-    width: 100%;
-    height: 100%;
-    border: none;
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    
-}
-.iframe-close-btn{
-    position: absolute;
-    top: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: var(--space-xxl);
-    height: var(--space-xxl);
-    border-radius: 50%;
-    font-size: 2.5rem;
-    color: var(--color-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 10;
-    font-weight: bold;
-    background-color: rgba(207, 202, 202, 1);
-    border: 2px solid var(--color-primary);
-    outline: 2px solid var(--color-light);
-}
 
 /* Why Me Section */
 .why-grid {
@@ -753,9 +686,10 @@ p {
         flex-direction: column;
     }
     .project-tab-buttons{
+        padding: 0.3rem;
+        border-radius: 20px;
         overflow: auto;
     }
-      
     .about-left{
         width: 100%;
         margin-bottom: var(--space-lg);
@@ -779,8 +713,8 @@ p {
     }
 
     .project-tab-panels{
-        border-radius: 0 0 0 15px;
-        padding: var(--space-sm);  
+        border-radius: 10px;
+        padding: 0.3rem;  
     }
     .services-container{
         display: grid;
@@ -799,11 +733,11 @@ p {
         border-bottom: 1px solid var(--color-primary);
         outline: none;
         background-color: white;
-        padding: 0.25rem 0.5rem;
+        padding: 0.5rem;
         border-radius: 3px;
         cursor: pointer;
         flex: 1;
-        font-size: 0.8rem;
+        font-size: 1rem;
         transition: all 0.5s fade-in;
         color: var(--color-primary);
         
