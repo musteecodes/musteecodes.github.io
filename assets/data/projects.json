@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Mustee Codes Portfolio",
+    "category": "Portfolio Website",
+    "panelName": "latest",
+    "description": "A fully responsive personal portfolio built using semantic HTML,custom CSS, and vanilla JavaScript — designed to showcase my skills, services, and case studies.",
+    "image": "/assets/images/project/portfolio1.webp",
+    "alt": "Screenshot of Mustee Portfolio Website",
+    "link": "https://preview-mustee.vercel.app/portfolio1/",
+    "btnLabel": "Live Preview"
+  },
+
+  {
+    "name": "Mustee Codes Portfolio",
+    "category": "Captive portal",
+    "panelName": "latest",
+    "description": "A lightweight, responsive captive portal splash page for public Wi-Fi authentication, built with pure HTML, CSS, and shell scripting. Designed to integrate with NoDogSplash and support secure username/password login.",
+    "image": "/assets/images/project/splash-page.webp",
+    "alt": "Screenshot of public wifi captive portal",
+    "link": "https://preview-mustee.vercel.app/splash/",
+    "btnLabel": "Live Preview"
+  },
+
+  {
+    "name": "Mustee Codes Portfolio",
+    "category": "Portfolio Website",
+    "panelName": "latest",
+    "description": "A minimalist, elegant landing page for a modest fashion brand. Built to increase brand credibility and attract a modern Muslimah audience.",
+    "image": "/assets/images/project/qamarr.webp",
+    "alt": "Screenshot of fashion brand Website",
+    "btnLabel": "Live Preview"
+  },
+
+  {
+    "name": "GPA Calculator",
+    "category": "Web App",
+    "panelName": "latest",
+    "description": "A simple and lightweight GPA calculator built with HTML, CSS, and JavaScript. Enter your courses and grades, then compute your GPA instantly. Designed for students who want a fast, no-frills tool.",
+    "image": "/assets/images/project/gpa-calc.webp",
+    "alt": "Screenshot of fashion brand Website",
+    "link": "https://preview-mustee.vercel.app/Mustee-gpa-calc/",
+    "btnLabel": "Live Preview"
+  }
+]
